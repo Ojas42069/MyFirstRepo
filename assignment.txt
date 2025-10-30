@@ -9,4 +9,22 @@ else:
     print(f"Withdrawal successful. Remaining balance: ₹{balance}")
 
 
+This code simulates a very simple ATM withdrawal:
+
+balance = 5000 → sets the starting account balance.
+
+amount = float(input("Enter amount to withdraw: ")) → asks the user how much they want to withdraw and converts the input to a number.
+
+if amount > balance: → checks if the withdrawal amount is greater than the available balance.
+
+print("Not enough balance") → runs if there isn’t enough money in the account.
+
+else: → runs if there is enough money.
+
+balance -= amount → subtracts the withdrawn amount from the account balance.
+
+print(f"Withdrawal successful. Remaining balance: ₹{balance}") → displays the remaining balance after successful withdrawal.
+
+
+Thank You!
 
