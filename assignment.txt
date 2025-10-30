@@ -1,19 +1,12 @@
-Largest of 5 numbers Python Code
+Python Code simulating an ATM 
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
-d = int(input("Enter fourth number: "))
-e = int(input("Enter fifth number: "))
+balance = 5000
+amount = float(input("Enter amount to withdraw: "))
+if amount > balance:
+    print("Not enough balance")
+else:
+    balance -= amount
+    print(f"Withdrawal successful. Remaining balance: ₹{balance}")
 
-largest = a
-if b > largest:
-    largest = b
-if c > largest:
-    largest = c
-if d > largest:
-    largest = d
-if e > largest:
-    largest = e
 
-print("The largest number is:", largest)
+
